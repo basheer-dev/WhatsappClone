@@ -23,6 +23,7 @@
 		3A9BACC22A62586B0064CF34 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A9BACC12A62586B0064CF34 /* FirebaseStorage */; };
 		3A9BACC52A629BD10064CF34 /* PhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC42A629BD10064CF34 /* PhoneNumberVC.swift */; };
 		3A9BACC72A629BDB0064CF34 /* SMSCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC62A629BDB0064CF34 /* SMSCodeVC.swift */; };
+		3A9BACC92A62EFEA0064CF34 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC82A62EFEA0064CF34 /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		3A9BACBA2A62570B0064CF34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A9BACC42A629BD10064CF34 /* PhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVC.swift; sourceTree = "<group>"; };
 		3A9BACC62A629BDB0064CF34 /* SMSCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeVC.swift; sourceTree = "<group>"; };
+		3A9BACC82A62EFEA0064CF34 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,18 +81,19 @@
 				3A9BACAB2A62369B0064CF34 /* Delegates */,
 				3A9BACAA2A62368B0064CF34 /* Views */,
 				3A9BACA92A6236800064CF34 /* ViewModels */,
-				3A9BACA82A6236790064CF34 /* Models */,
+				3A9BACA82A6236790064CF34 /* Managers */,
 				3A9BACA22A6235420064CF34 /* Info.plist */,
 				3A9BACBA2A62570B0064CF34 /* GoogleService-Info.plist */,
 			);
 			path = WhatsappClone;
 			sourceTree = "<group>";
 		};
-		3A9BACA82A6236790064CF34 /* Models */ = {
+		3A9BACA82A6236790064CF34 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				3A9BACC82A62EFEA0064CF34 /* AuthManager.swift */,
 			);
-			path = Models;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		3A9BACA92A6236800064CF34 /* ViewModels */ = {
@@ -237,6 +240,7 @@
 				3A9BACB32A6236FB0064CF34 /* CommunitiesVC.swift in Sources */,
 				3A9BAC952A6235410064CF34 /* AppDelegate.swift in Sources */,
 				3A9BACAF2A6236E30064CF34 /* StatusVC.swift in Sources */,
+				3A9BACC92A62EFEA0064CF34 /* AuthManager.swift in Sources */,
 				3A9BAC972A6235410064CF34 /* SceneDelegate.swift in Sources */,
 				3A9BACB72A6237140064CF34 /* SettingsVC.swift in Sources */,
 			);

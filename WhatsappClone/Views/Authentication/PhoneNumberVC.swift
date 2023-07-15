@@ -98,6 +98,8 @@ final class PhoneNumberVC: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        
         view.addSubview(descriptionLabel)
         view.addSubview(countryCodeTextField)
         view.addSubview(phoneNumberTextField)
@@ -139,5 +141,18 @@ final class PhoneNumberVC: UIViewController {
             nextButton.widthAnchor.constraint(equalToConstant: 120),
             nextButton.heightAnchor.constraint(equalToConstant: 44)
         ])
+    }
+    
+    // MARK: - ACTIONS
+    @objc private func nextButtonTapped() {
+        guard let countryCode = countryCodeTextField.text,
+              let phoneNumberText = phoneNumberTextField.text,
+              !countryCode.isEmpty, !phoneNumberText.isEmpty else { return }
+        AuthManager.shared.authenticateUser(phoneNumber: "+\(countryCode)\(phoneNumberText)") {
+            [weak self] success in
+            guard success else { return }
+            let dest = SMSCodeVC()
+            self?.navigationController?.pushViewController(dest, animated: true)
+        }
     }
 }

@@ -72,6 +72,8 @@ final class SMSCodeVC: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        
         view.addSubview(descriptionLabel)
         view.addSubview(SMSCodeTextField)
         view.addSubview(SMSCodeUnderLine)
@@ -97,5 +99,16 @@ final class SMSCodeVC: UIViewController {
             nextButton.widthAnchor.constraint(equalToConstant: 120),
             nextButton.heightAnchor.constraint(equalToConstant: 44)
         ])
+    }
+    
+    // MARK: - ACTIONS
+    @objc private func nextButtonTapped() {
+        guard let SMSCode = SMSCodeTextField.text,
+              !SMSCode.isEmpty else { return }
+        AuthManager.shared.verifySMSCode(SMSCode: SMSCode) {
+            success in
+            guard success else { return }
+            print("verified")
+        }
     }
 }
