@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3A9BAC952A6235410064CF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BAC942A6235410064CF34 /* AppDelegate.swift */; };
 		3A9BAC972A6235410064CF34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BAC962A6235410064CF34 /* SceneDelegate.swift */; };
-		3A9BAC992A6235410064CF34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BAC982A6235410064CF34 /* ViewController.swift */; };
-		3A9BAC9C2A6235410064CF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9BAC9A2A6235410064CF34 /* Main.storyboard */; };
 		3A9BAC9E2A6235420064CF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9BAC9D2A6235420064CF34 /* Assets.xcassets */; };
 		3A9BACA12A6235420064CF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9BAC9F2A6235420064CF34 /* LaunchScreen.storyboard */; };
+		3A9BACAF2A6236E30064CF34 /* StatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACAE2A6236E30064CF34 /* StatusVC.swift */; };
+		3A9BACB12A6236EF0064CF34 /* CallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACB02A6236EF0064CF34 /* CallsVC.swift */; };
+		3A9BACB32A6236FB0064CF34 /* CommunitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACB22A6236FB0064CF34 /* CommunitiesVC.swift */; };
+		3A9BACB52A6237040064CF34 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACB42A6237040064CF34 /* ChatsVC.swift */; };
+		3A9BACB72A6237140064CF34 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACB62A6237140064CF34 /* SettingsVC.swift */; };
+		3A9BACB92A6237980064CF34 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACB82A6237980064CF34 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A9BAC912A6235410064CF34 /* WhatsappClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsappClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9BAC942A6235410064CF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9BAC962A6235410064CF34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A9BAC982A6235410064CF34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A9BAC9B2A6235410064CF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9BAC9D2A6235420064CF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9BACA02A6235420064CF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9BACA22A6235420064CF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9BACAE2A6236E30064CF34 /* StatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVC.swift; sourceTree = "<group>"; };
+		3A9BACB02A6236EF0064CF34 /* CallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsVC.swift; sourceTree = "<group>"; };
+		3A9BACB22A6236FB0064CF34 /* CommunitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesVC.swift; sourceTree = "<group>"; };
+		3A9BACB42A6237040064CF34 /* ChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
+		3A9BACB62A6237140064CF34 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		3A9BACB82A6237980064CF34 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		3A9BAC932A6235410064CF34 /* WhatsappClone */ = {
 			isa = PBXGroup;
 			children = (
-				3A9BAC942A6235410064CF34 /* AppDelegate.swift */,
-				3A9BAC962A6235410064CF34 /* SceneDelegate.swift */,
-				3A9BAC982A6235410064CF34 /* ViewController.swift */,
-				3A9BAC9A2A6235410064CF34 /* Main.storyboard */,
-				3A9BAC9D2A6235420064CF34 /* Assets.xcassets */,
-				3A9BAC9F2A6235420064CF34 /* LaunchScreen.storyboard */,
+				3A9BACAB2A62369B0064CF34 /* Delegates */,
+				3A9BACAA2A62368B0064CF34 /* Views */,
+				3A9BACA92A6236800064CF34 /* ViewModels */,
+				3A9BACA82A6236790064CF34 /* Models */,
 				3A9BACA22A6235420064CF34 /* Info.plist */,
 			);
 			path = WhatsappClone;
+			sourceTree = "<group>";
+		};
+		3A9BACA82A6236790064CF34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A9BACA92A6236800064CF34 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3A9BACAA2A62368B0064CF34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A9BACB82A6237980064CF34 /* MainTabBarController.swift */,
+				3A9BACAD2A6236CB0064CF34 /* MainTabs */,
+				3A9BACAC2A6236BA0064CF34 /* Media */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A9BACAB2A62369B0064CF34 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3A9BAC942A6235410064CF34 /* AppDelegate.swift */,
+				3A9BAC962A6235410064CF34 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3A9BACAC2A6236BA0064CF34 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				3A9BAC9D2A6235420064CF34 /* Assets.xcassets */,
+				3A9BAC9F2A6235420064CF34 /* LaunchScreen.storyboard */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		3A9BACAD2A6236CB0064CF34 /* MainTabs */ = {
+			isa = PBXGroup;
+			children = (
+				3A9BACAE2A6236E30064CF34 /* StatusVC.swift */,
+				3A9BACB02A6236EF0064CF34 /* CallsVC.swift */,
+				3A9BACB22A6236FB0064CF34 /* CommunitiesVC.swift */,
+				3A9BACB42A6237040064CF34 /* ChatsVC.swift */,
+				3A9BACB62A6237140064CF34 /* SettingsVC.swift */,
+			);
+			path = MainTabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +187,6 @@
 			files = (
 				3A9BACA12A6235420064CF34 /* LaunchScreen.storyboard in Resources */,
 				3A9BAC9E2A6235420064CF34 /* Assets.xcassets in Resources */,
-				3A9BAC9C2A6235410064CF34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +197,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9BAC992A6235410064CF34 /* ViewController.swift in Sources */,
+				3A9BACB52A6237040064CF34 /* ChatsVC.swift in Sources */,
+				3A9BACB12A6236EF0064CF34 /* CallsVC.swift in Sources */,
+				3A9BACB92A6237980064CF34 /* MainTabBarController.swift in Sources */,
+				3A9BACB32A6236FB0064CF34 /* CommunitiesVC.swift in Sources */,
 				3A9BAC952A6235410064CF34 /* AppDelegate.swift in Sources */,
+				3A9BACAF2A6236E30064CF34 /* StatusVC.swift in Sources */,
 				3A9BAC972A6235410064CF34 /* SceneDelegate.swift in Sources */,
+				3A9BACB72A6237140064CF34 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3A9BAC9A2A6235410064CF34 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A9BAC9B2A6235410064CF34 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A9BAC9F2A6235420064CF34 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +348,6 @@
 				INFOPLIST_FILE = WhatsappClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +375,6 @@
 				INFOPLIST_FILE = WhatsappClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
