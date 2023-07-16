@@ -68,5 +68,9 @@ extension ChatsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let dest = ChatVC()
+        navigationItem.backButtonTitle = "10"
+        navigationController?.pushViewController(dest, animated: true)
     }
 }
