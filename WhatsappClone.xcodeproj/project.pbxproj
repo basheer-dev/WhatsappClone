@@ -24,6 +24,7 @@
 		3A9BACC52A629BD10064CF34 /* PhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC42A629BD10064CF34 /* PhoneNumberVC.swift */; };
 		3A9BACC72A629BDB0064CF34 /* SMSCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC62A629BDB0064CF34 /* SMSCodeVC.swift */; };
 		3A9BACC92A62EFEA0064CF34 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC82A62EFEA0064CF34 /* AuthManager.swift */; };
+		3ADFC23F2A63FDAF001C55F4 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFC23E2A63FDAF001C55F4 /* ChatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		3A9BACC42A629BD10064CF34 /* PhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVC.swift; sourceTree = "<group>"; };
 		3A9BACC62A629BDB0064CF34 /* SMSCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeVC.swift; sourceTree = "<group>"; };
 		3A9BACC82A62EFEA0064CF34 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		3ADFC23E2A63FDAF001C55F4 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				3A9BACB82A6237980064CF34 /* MainTabBarController.swift */,
 				3A9BACC32A629BB50064CF34 /* Authentication */,
 				3A9BACAD2A6236CB0064CF34 /* MainTabs */,
+				3ADFC23C2A63FD0E001C55F4 /* Cells */,
 				3A9BACAC2A6236BA0064CF34 /* Media */,
 			);
 			path = Views;
@@ -140,6 +143,7 @@
 				3A9BACB22A6236FB0064CF34 /* CommunitiesVC.swift */,
 				3A9BACB42A6237040064CF34 /* ChatsVC.swift */,
 				3A9BACB62A6237140064CF34 /* SettingsVC.swift */,
+				3ADFC23D2A63FD1F001C55F4 /* Details */,
 			);
 			path = MainTabs;
 			sourceTree = "<group>";
@@ -151,6 +155,21 @@
 				3A9BACC62A629BDB0064CF34 /* SMSCodeVC.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3ADFC23C2A63FD0E001C55F4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFC23E2A63FDAF001C55F4 /* ChatCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3ADFC23D2A63FD1F001C55F4 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +256,7 @@
 				3A9BACC52A629BD10064CF34 /* PhoneNumberVC.swift in Sources */,
 				3A9BACB12A6236EF0064CF34 /* CallsVC.swift in Sources */,
 				3A9BACB92A6237980064CF34 /* MainTabBarController.swift in Sources */,
+				3ADFC23F2A63FDAF001C55F4 /* ChatCell.swift in Sources */,
 				3A9BACB32A6236FB0064CF34 /* CommunitiesVC.swift in Sources */,
 				3A9BAC952A6235410064CF34 /* AppDelegate.swift in Sources */,
 				3A9BACAF2A6236E30064CF34 /* StatusVC.swift in Sources */,
