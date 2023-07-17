@@ -13,19 +13,19 @@ class SettingsVC: UIViewController {
             [:]
         ],
         [
-            ["title": "Starred Messages", "image": "star.square.fill", "tintColor": UIColor.systemYellow],
-            ["title": "Linked Devices", "image": "laptopcomputer.and.ipad", "tintColor": UIColor.systemMint]
+            ["title": "Starred Messages", "image": "StarredMessages", "tintColor": UIColor.systemYellow],
+            ["title": "Linked Devices", "image": "LinkedDevices", "tintColor": UIColor.systemMint]
         ],
         [
-            ["title": "Account", "image": "key.fill", "tintColor": UIColor.systemBlue],
-            ["title": "Privacy", "image": "lock.square.fill", "tintColor": UIColor.systemMint],
-            ["title": "Chats", "image": "message.circle.fill", "tintColor": UIColor.systemGreen],
-            ["title": "Notifications", "image": "bell.square.fill", "tintColor": UIColor.systemRed],
-            ["title": "Storage and Data", "image": "memorychip.fill", "tintColor": UIColor.systemGreen]
+            ["title": "Account", "image": "Account", "tintColor": UIColor.systemBlue],
+            ["title": "Privacy", "image": "Privacy", "tintColor": UIColor.systemMint],
+            ["title": "Chats", "image": "Chats", "tintColor": UIColor.systemGreen],
+            ["title": "Notifications", "image": "Notifications", "tintColor": UIColor.systemRed],
+            ["title": "Storage and Data", "image": "StorageAndData", "tintColor": UIColor.systemGreen]
         ],
         [
-            ["title": "Help", "image": "info.square.fill", "tintColor": UIColor.link],
-            ["title": "Tell a Friend", "image": "heart.square.fill", "tintColor": UIColor.systemPink]
+            ["title": "Help", "image": "Help", "tintColor": UIColor.link],
+            ["title": "Tell a Friend", "image": "TellAFriend", "tintColor": UIColor.systemPink]
         ]
     ]
     
@@ -96,11 +96,13 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
         let row = indexPath.row
         
         cellInfo.text = content[section][row]["title"] as? String
-        cellInfo.image = UIImage(systemName: content[section][row]["image"] as! String)
+        cellInfo.image = UIImage(named: content[section][row]["image"] as! String)
+        cellInfo.imageProperties.maximumSize = CGSize(width: 23, height: 23)
         cellInfo.imageProperties.tintColor = content[section][row]["tintColor"] as? UIColor
         
         cell.contentConfiguration = cellInfo
         cell.accessoryType = .disclosureIndicator
+        print(cell.intrinsicContentSize)
         
         return cell
     }
