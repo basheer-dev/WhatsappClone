@@ -105,9 +105,11 @@ final class SMSCodeVC: UIViewController {
     @objc private func nextButtonTapped() {
         guard let SMSCode = SMSCodeTextField.text,
               !SMSCode.isEmpty else { return }
+        
         AuthManager.shared.verifySMSCode(SMSCode: SMSCode) {
             [weak self] success in
             guard success else { return }
+            
             let dest = MainTabBarController()
             dest.modalPresentationStyle = .fullScreen
             

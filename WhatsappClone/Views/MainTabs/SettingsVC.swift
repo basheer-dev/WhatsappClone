@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsVC: UIViewController {
+final class SettingsVC: UIViewController {
     private var content: [[[String: Any]]] = [
         [
             [:]
@@ -53,8 +53,10 @@ class SettingsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .secondarySystemBackground
+        
         navigationItem.searchController = searchController
         navigationController?.navigationBar.prefersLargeTitles = true
+        
         title = "Settings"
     }
     
@@ -89,6 +91,7 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingsCell.id, for: indexPath) as? SettingsCell else { fatalError() }
             return cell
         }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath)
         var cellInfo = cell.defaultContentConfiguration()
         
@@ -102,7 +105,6 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
         
         cell.contentConfiguration = cellInfo
         cell.accessoryType = .disclosureIndicator
-        print(cell.intrinsicContentSize)
         
         return cell
     }

@@ -7,13 +7,15 @@
 
 import UIKit
 
-class CommunitiesVC: UIViewController {
+final class CommunitiesVC: UIViewController {
     
     // MARK: - VDL
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
         navigationController?.navigationBar.prefersLargeTitles = true
+        
         title = "Communities"
     }
 }

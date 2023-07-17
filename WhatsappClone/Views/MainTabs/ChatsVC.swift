@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChatsVC: UIViewController {
+final class ChatsVC: UIViewController {
     
     lazy var searchController: UISearchController = {
         let controller = UISearchController()

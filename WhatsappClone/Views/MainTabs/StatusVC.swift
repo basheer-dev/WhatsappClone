@@ -7,13 +7,15 @@
 
 import UIKit
 
-class StatusVC: UIViewController {
+final class StatusVC: UIViewController {
     
     // MARK: - VDL
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
         navigationController?.navigationBar.prefersLargeTitles = true
+        
         title = "Status"
     }
 }

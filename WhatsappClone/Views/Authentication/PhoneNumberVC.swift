@@ -148,9 +148,11 @@ final class PhoneNumberVC: UIViewController {
         guard let countryCode = countryCodeTextField.text,
               let phoneNumberText = phoneNumberTextField.text,
               !countryCode.isEmpty, !phoneNumberText.isEmpty else { return }
+        
         AuthManager.shared.authenticateUser(phoneNumber: "+\(countryCode)\(phoneNumberText)") {
             [weak self] success in
             guard success else { return }
+            
             let dest = SMSCodeVC()
             self?.navigationController?.pushViewController(dest, animated: true)
         }

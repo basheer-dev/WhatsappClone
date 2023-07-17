@@ -8,12 +8,12 @@
 import UIKit
 
 final class ChatVC: UIViewController {
-    var messages: [Message] = [
+    private var messages: [Message] = [
         Message(content: "hello basheer", wasReceived: true),
         Message(content: "oh hello there", wasReceived: false)
     ]
     
-    let userProfileImageView: UIImageView = {
+    private let userProfileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         

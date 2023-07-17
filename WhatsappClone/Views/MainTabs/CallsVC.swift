@@ -7,13 +7,15 @@
 
 import UIKit
 
-class CallsVC: UIViewController {
+final class CallsVC: UIViewController {
     
     // MARK: - VDL
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
         navigationController?.navigationBar.prefersLargeTitles = true
+        
         title = "Calls"
     }
 }
