@@ -102,6 +102,7 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
         cellInfo.image = UIImage(named: content[section][row]["image"] as! String)
         cellInfo.imageProperties.maximumSize = CGSize(width: 23, height: 23)
         cellInfo.imageProperties.tintColor = content[section][row]["tintColor"] as? UIColor
+        cellInfo.imageProperties.cornerRadius = 5
         
         cell.contentConfiguration = cellInfo
         cell.accessoryType = .disclosureIndicator

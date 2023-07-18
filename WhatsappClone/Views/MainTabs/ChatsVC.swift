@@ -23,6 +23,7 @@ final class ChatsVC: UIViewController {
         tableView.dataSource = self
         
         tableView.register(ChatCell.self, forCellReuseIdentifier: ChatCell.id)
+        tableView.rowHeight = 76
         tableView.separatorInset.left = 90
         
         return tableView
@@ -36,8 +37,11 @@ final class ChatsVC: UIViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.searchController = searchController
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: nil, action: nil)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: nil, action: nil)
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil),
+            UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: nil)
+        ]
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: nil)
     }
     
     override func viewDidLayoutSubviews() {

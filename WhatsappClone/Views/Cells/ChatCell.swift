@@ -102,7 +102,7 @@ final class ChatCell: UITableViewCell {
             profileImageView.topAnchor.constraint(equalTo: topAnchor, constant: 8),
             profileImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             profileImageView.widthAnchor.constraint(equalToConstant: 60),
-            profileImageView.heightAnchor.constraint(equalToConstant: 60),
+//            profileImageView.heightAnchor.constraint(equalToConstant: 60),
             profileImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
             
             userNameLabel.topAnchor.constraint(equalTo: profileImageView.topAnchor, constant: 5),
