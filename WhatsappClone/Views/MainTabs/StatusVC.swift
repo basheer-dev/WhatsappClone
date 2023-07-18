@@ -49,6 +49,7 @@ final class StatusVC: UIViewController {
         tableView.register(UserStatusCell.self, forCellReuseIdentifier: UserStatusCell.id)
         
         tableView.backgroundColor = .secondarySystemBackground
+        tableView.layoutMargins.left = .zero
         
         return tableView
     }()
@@ -160,7 +161,8 @@ extension StatusVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserStatusCell.id, for: indexPath) as? UserStatusCell else { fatalError() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserStatusCell.id, for: indexPath) as? UserStatusCell,
+              let users = statusCollection[indexPath.section]["users"] as? [String] else { fatalError() }
         
         if indexPath.section == 0 {
             cell.set(isContactStatus: false)
@@ -168,8 +170,10 @@ extension StatusVC: UITableViewDelegate, UITableViewDataSource {
             cell.set()
         }
         
-        if indexPath.row >= 1 {
-            tableView.separatorInset.left = 90
+        if indexPath.row == users.count - 1 {
+            cell.separatorInset = .zero
+        } else {
+            cell.separatorInset.left = 90
         }
                 
         return cell

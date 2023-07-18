@@ -44,6 +44,7 @@ final class SettingsVC: UIViewController {
         tableView.backgroundColor = .secondarySystemBackground
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "SettingsCell")
         tableView.register(SettingsCell.self, forCellReuseIdentifier: SettingsCell.id)
+        tableView.layoutMargins = .zero
         tableView.contentInset.bottom = 100
         
         return tableView
@@ -89,6 +90,8 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingsCell.id, for: indexPath) as? SettingsCell else { fatalError() }
+            cell.separatorInset = .zero
+            
             return cell
         }
         
@@ -106,6 +109,10 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
         
         cell.contentConfiguration = cellInfo
         cell.accessoryType = .disclosureIndicator
+        
+        if indexPath.row == content[section].count - 1 {
+            cell.separatorInset = .zero
+        }
         
         return cell
     }
