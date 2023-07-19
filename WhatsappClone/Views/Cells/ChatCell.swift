@@ -27,6 +27,7 @@ final class ChatCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         
         label.text = "Basheer Abdulmalik"
+        label.font = .systemFont(ofSize: 16, weight: .medium)
                 
         return label
     }()
@@ -78,6 +79,14 @@ final class ChatCell: UITableViewCell {
         return label
     }()
     
+    let separator: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .systemGray3
+        
+        return view
+    }()
+    
     // MARK: - INIT
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -97,12 +106,13 @@ final class ChatCell: UITableViewCell {
         addSubview(lastMessageLabel)
         addSubview(newMessagesContainer)
         addSubview(newMessagesCountLabel)
+        addSubview(separator)
                 
         NSLayoutConstraint.activate([
             profileImageView.topAnchor.constraint(equalTo: topAnchor, constant: 8),
             profileImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            profileImageView.heightAnchor.constraint(equalToConstant: 60),
             profileImageView.widthAnchor.constraint(equalToConstant: 60),
-//            profileImageView.heightAnchor.constraint(equalToConstant: 60),
             profileImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
             
             userNameLabel.topAnchor.constraint(equalTo: profileImageView.topAnchor, constant: 5),
@@ -122,7 +132,12 @@ final class ChatCell: UITableViewCell {
             newMessagesContainer.widthAnchor.constraint(equalToConstant: newMessagesCountLabel.intrinsicContentSize.width + 14.33),
             
             newMessagesCountLabel.centerXAnchor.constraint(equalTo: newMessagesContainer.centerXAnchor),
-            newMessagesCountLabel.centerYAnchor.constraint(equalTo: newMessagesContainer.centerYAnchor)
+            newMessagesCountLabel.centerYAnchor.constraint(equalTo: newMessagesContainer.centerYAnchor),
+            
+            separator.leadingAnchor.constraint(equalTo: userNameLabel.leadingAnchor),
+            separator.trailingAnchor.constraint(equalTo: trailingAnchor),
+            separator.bottomAnchor.constraint(equalTo: bottomAnchor),
+            separator.heightAnchor.constraint(equalToConstant: 0.5)
         ])
     }
 }

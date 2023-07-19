@@ -30,6 +30,7 @@ final class ChatVC: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         
         label.text = "Basheer Abdulmalik"
+        label.font = .systemFont(ofSize: 17, weight: .medium)
                 
         return label
     }()

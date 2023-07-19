@@ -28,6 +28,10 @@
 		3A9BACC52A629BD10064CF34 /* PhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC42A629BD10064CF34 /* PhoneNumberVC.swift */; };
 		3A9BACC72A629BDB0064CF34 /* SMSCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC62A629BDB0064CF34 /* SMSCodeVC.swift */; };
 		3A9BACC92A62EFEA0064CF34 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BACC82A62EFEA0064CF34 /* AuthManager.swift */; };
+		3AA3B8132A678111006F0590 /* CreateCallLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B8122A678111006F0590 /* CreateCallLinkCell.swift */; };
+		3AA3B8152A6790A5006F0590 /* CallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B8142A6790A5006F0590 /* CallCell.swift */; };
+		3AA3B8172A6809C8006F0590 /* ChatsFirstSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B8162A6809C8006F0590 /* ChatsFirstSectionCell.swift */; };
+		3AA3B81A2A680DAD006F0590 /* ChatsSecondSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B8192A680DAD006F0590 /* ChatsSecondSectionCell.swift */; };
 		3ACDE3D62A66853000941B5E /* UserStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACDE3D52A66853000941B5E /* UserStatusCell.swift */; };
 		3ACDE3D82A66854000941B5E /* ContactStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACDE3D72A66854000941B5E /* ContactStatusCell.swift */; };
 		3ADFC23F2A63FDAF001C55F4 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFC23E2A63FDAF001C55F4 /* ChatCell.swift */; };
@@ -54,6 +58,10 @@
 		3A9BACC42A629BD10064CF34 /* PhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVC.swift; sourceTree = "<group>"; };
 		3A9BACC62A629BDB0064CF34 /* SMSCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeVC.swift; sourceTree = "<group>"; };
 		3A9BACC82A62EFEA0064CF34 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		3AA3B8122A678111006F0590 /* CreateCallLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCallLinkCell.swift; sourceTree = "<group>"; };
+		3AA3B8142A6790A5006F0590 /* CallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallCell.swift; sourceTree = "<group>"; };
+		3AA3B8162A6809C8006F0590 /* ChatsFirstSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsFirstSectionCell.swift; sourceTree = "<group>"; };
+		3AA3B8192A680DAD006F0590 /* ChatsSecondSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsSecondSectionCell.swift; sourceTree = "<group>"; };
 		3ACDE3D52A66853000941B5E /* UserStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatusCell.swift; sourceTree = "<group>"; };
 		3ACDE3D72A66854000941B5E /* ContactStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStatusCell.swift; sourceTree = "<group>"; };
 		3ADFC23E2A63FDAF001C55F4 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
@@ -182,10 +190,14 @@
 			isa = PBXGroup;
 			children = (
 				3ADFC23E2A63FDAF001C55F4 /* ChatCell.swift */,
+				3AA3B8162A6809C8006F0590 /* ChatsFirstSectionCell.swift */,
 				3A0E5CFD2A64380000BD1B01 /* MessageCell.swift */,
 				3A5E49F82A64F6DE00CCAC7E /* SettingsCell.swift */,
 				3ACDE3D52A66853000941B5E /* UserStatusCell.swift */,
 				3ACDE3D72A66854000941B5E /* ContactStatusCell.swift */,
+				3AA3B8122A678111006F0590 /* CreateCallLinkCell.swift */,
+				3AA3B8142A6790A5006F0590 /* CallCell.swift */,
+				3AA3B8192A680DAD006F0590 /* ChatsSecondSectionCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -278,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A9BACB52A6237040064CF34 /* ChatsVC.swift in Sources */,
+				3AA3B8172A6809C8006F0590 /* ChatsFirstSectionCell.swift in Sources */,
 				3A9BACC72A629BDB0064CF34 /* SMSCodeVC.swift in Sources */,
 				3A9BACC52A629BD10064CF34 /* PhoneNumberVC.swift in Sources */,
 				3ACDE3D62A66853000941B5E /* UserStatusCell.swift in Sources */,
@@ -286,6 +299,7 @@
 				3ACDE3D82A66854000941B5E /* ContactStatusCell.swift in Sources */,
 				3ADFC23F2A63FDAF001C55F4 /* ChatCell.swift in Sources */,
 				3A9BACB32A6236FB0064CF34 /* CommunitiesVC.swift in Sources */,
+				3AA3B8152A6790A5006F0590 /* CallCell.swift in Sources */,
 				3A9BAC952A6235410064CF34 /* AppDelegate.swift in Sources */,
 				3A9BACAF2A6236E30064CF34 /* StatusVC.swift in Sources */,
 				3A9BACC92A62EFEA0064CF34 /* AuthManager.swift in Sources */,
@@ -295,6 +309,8 @@
 				3A9BACB72A6237140064CF34 /* SettingsVC.swift in Sources */,
 				3A5E49F92A64F6DE00CCAC7E /* SettingsCell.swift in Sources */,
 				3A0E5CFC2A6437CD00BD1B01 /* Message.swift in Sources */,
+				3AA3B8132A678111006F0590 /* CreateCallLinkCell.swift in Sources */,
+				3AA3B81A2A680DAD006F0590 /* ChatsSecondSectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
